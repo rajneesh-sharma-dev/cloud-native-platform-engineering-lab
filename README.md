@@ -1,95 +1,34 @@
 # Cloud Native Platform Engineering Lab
 
-A hands-on Platform Engineering portfolio project focused on building, validating, operating, and troubleshooting a cloud-native application platform.
+A hands-on lab for building, deploying, operating, and troubleshooting a small cloud-native application platform.
 
-The project is designed to demonstrate practical skills relevant to Platform Engineer, Kubernetes Engineer, Cloud Platform Engineer, DevOps, SRE, and Telecom Cloud roles.
+The project is being developed incrementally, with each stage adding a practical platform engineering capability and validating it before moving on.
 
----
+## Current Focus
 
-## Project Objective
+The current phase is focused on building the initial application and then progressing through containerization, Kubernetes deployment, Helm packaging, CI/CD, and platform troubleshooting.
 
-The main goal of this project is to build genuine hands-on experience in the areas that complement my production Kubernetes and Linux troubleshooting background.
+The aim is to understand not only how to deploy workloads, but also how to validate them, investigate failures, recover from issues, and improve the platform over time.
 
-The project will progressively cover:
+## Project Direction
 
-- Git and GitHub
-- Application delivery
-- Containers
-- Kubernetes
-- Helm
+The project will evolve through practical milestones such as:
+
+- application build and testing
+- containerization
+- Kubernetes deployment
+- Helm packaging and upgrades
 - CI/CD with GitHub Actions
-- Automated validation and smoke testing
-- Production-style troubleshooting
-- Terraform
-- AWS networking and IAM
-- ECR and EKS
-- GitHub OIDC
-- ArgoCD and GitOps
-- Observability
-- OpenShift adaptation
+- deployment validation and smoke testing
+- troubleshooting scenarios
+- infrastructure as code
+- AWS-based Kubernetes deployment
+- GitOps-based delivery
 
-The focus is not only on deployment, but also on understanding how the platform behaves when something fails.
+Additional areas such as observability and OpenShift may be added later where they provide useful platform engineering experience.
 
----
+## Status
 
-## Why This Project Exists
-
-My professional background is primarily in:
-
-- Kubernetes production support
-- Linux troubleshooting
-- CNF/VNF lifecycle operations
-- Helm-related deployment issues
-- Incident handling
-- RCA and MOP preparation
-- Production troubleshooting under time constraints
-
-This project is intended to extend that operational experience toward broader Platform Engineering ownership by building practical experience in:
-
-- CI/CD pipelines
-- container build and delivery
-- infrastructure provisioning
-- cloud services
-- automation
-- GitOps
-- deployment validation
-- platform engineering workflows
-
----
-
-## Planned Architecture Evolution
-
-```text
-Application
-    ↓
-Git & GitHub
-    ↓
-Container Image
-    ↓
-Kubernetes
-    ↓
-Helm
-    ↓
-GitHub Actions CI
-    ↓
-Automated Validation
-    ↓
-Smoke Tests
-    ↓
-Troubleshooting Labs
-    ↓
-Container Registry
-    ↓
-Terraform
-    ↓
-AWS VPC / IAM / ECR / EKS
-    ↓
-GitHub OIDC
-    ↓
-GitOps Repository
-    ↓
-ArgoCD
-    ↓
-Observability
-    ↓
-OpenShift Adaptation
+✅ GitHub repository setup complete  
+🚧 Initial application phase  
+📋 Later platform stages planned
