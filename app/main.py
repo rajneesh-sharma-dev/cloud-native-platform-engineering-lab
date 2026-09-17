@@ -4,13 +4,13 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Platform engineering lab"}
+    return {"message": "Platform engineering lab available now"}
 
 
 @app.get("/healthz")
 def health_check():
-    return {"status": "ok"}
+    return {"status": "All Good Bro"}
 
 @app.get("/version")
 def get_version():
-    return {"version": "0.1.0"}
+    return {"app current version": "0.1.0"}

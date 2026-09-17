@@ -2,33 +2,45 @@
 
 A hands-on lab for building, deploying, operating, and troubleshooting a small cloud-native application platform.
 
-The project is being developed incrementally, with each stage adding a practical platform engineering capability and validating it before moving on.
+I’m building this incrementally so each stage is understood and tested before moving on to the next one.
 
-## Current Focus
+## Where am I right now 
 
-The current phase is focused on building the initial application and then progressing through containerization, Kubernetes deployment, Helm packaging, CI/CD, and platform troubleshooting.
+The first version of the application is running locally with FastAPI.
 
-The aim is to understand not only how to deploy workloads, but also how to validate them, investigate failures, recover from issues, and improve the platform over time.
+Current endpoints:
 
-## Project Direction
+- `/` - basic application response
+- `/healthz` - application health check
+- `/version` - current application version
 
-The project will evolve through practical milestones such as:
+Basic API tests are also in place and can be run locally with `pytest`.
 
-- application build and testing
-- containerization
-- Kubernetes deployment
-- Helm packaging and upgrades
-- CI/CD with GitHub Actions
-- deployment validation and smoke testing
-- troubleshooting scenarios
-- infrastructure as code
-- AWS-based Kubernetes deployment
-- GitOps-based delivery
+## What is next :
 
-Additional areas such as observability and OpenShift may be added later where they provide useful platform engineering experience.
+Right now the focus is on getting the application and testing workflow right before moving into containerization.
+
+The next steps are:
+
+- containerize the application
+- deploy it to Kubernetes
+- package it with Helm
+- add CI with GitHub Actions
+- add deployment validation and smoke tests
+- build controlled troubleshooting scenarios
+
+Later stages will introduce infrastructure as code, AWS, EKS, GitOps, observability, and OpenShift where they make sense.
+
+## Why This Project :
+
+The goal is not just to get workloads running.
+
+I want to understand how the platform behaves, how to validate changes, what breaks during deployments, how to troubleshoot failures, and how to improve the delivery workflow over time.
 
 ## Status
 
 ✅ GitHub repository setup complete  
-🚧 Initial application phase  
-📋 Later platform stages planned
+✅ Initial FastAPI application running locally  
+✅ Basic API tests passing  
+🚧 Containerization next  
+📋 Kubernetes, Helm, CI/CD and cloud stages planned
