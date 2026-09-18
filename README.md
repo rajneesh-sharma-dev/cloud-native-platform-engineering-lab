@@ -4,43 +4,37 @@ A hands-on lab for building, deploying, operating, and troubleshooting a small c
 
 I’m building this incrementally so each stage is understood and tested before moving on to the next one.
 
-## Where am I right now 
+## Current Progress
 
-The first version of the application is running locally with FastAPI.
+The first FastAPI application is running locally with:
 
-Current endpoints:
+- `/` - basic response
+- `/healthz` - health check
+- `/version` - application version
 
-- `/` - basic application response
-- `/healthz` - application health check
-- `/version` - current application version
+Basic API tests are in place with `pytest`.
 
-Basic API tests are also in place and can be run locally with `pytest`.
+The application has also been containerized with Docker and tested with host-to-container port mapping.
 
-## What is next :
+## What's Next?
 
-Right now the focus is on getting the application and testing workflow right before moving into containerization.
+Next milestones:
 
-The next steps are:
+- Kubernetes deployment
+- Kubernetes Service and health probes
+- resource requests and limits
+- Helm
+- GitHub Actions CI
+- deployment validation and smoke tests
+- troubleshooting scenarios
 
-- containerize the application
-- deploy it to Kubernetes
-- package it with Helm
-- add CI with GitHub Actions
-- add deployment validation and smoke tests
-- build controlled troubleshooting scenarios
-
-Later stages will introduce infrastructure as code, AWS, EKS, GitOps, observability, and OpenShift where they make sense.
-
-## Why This Project :
-
-The goal is not just to get workloads running.
-
-I want to understand how the platform behaves, how to validate changes, what breaks during deployments, how to troubleshoot failures, and how to improve the delivery workflow over time.
+Later stages will include Terraform, AWS, EKS, GitOps, observability, and OpenShift where they make sense.
 
 ## Status
 
-✅ GitHub repository setup complete  
-✅ Initial FastAPI application running locally  
+✅ GitHub setup complete  
+✅ FastAPI application running  
 ✅ Basic API tests passing  
-🚧 Containerization next  
-📋 Kubernetes, Helm, CI/CD and cloud stages planned
+✅ Docker containerization complete  
+🚧 Kubernetes next  
+📋 Helm, CI/CD and cloud stages planned
